@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+
+        let escolha = prompt("Você deseja adicionar um novo nome a lista de alunos? 1 para adicionar e 2 para não adicionar")
+        
+        let alunos = ["Aline ", "Arthur ", "Bárbara ", "Bruna Luise ", "Bruna Torres ", "Bruna Veloso ", "Cauã ", "Daniel",
+            "Davi", "Gabriel", "Henrique"]
+
+
+        if (escolha == 1) {
+            let novoNome = prompt("Digite o nome que deseja acrencentar")
+            alunos.push(novoNome)
+        } else {
+            (escolha == 2)
+            alert("Está é a lista de alunos")
+        }
+
+        while (true) {
+            let pergunta2 = prompt("Deseja inserir outro nome na lista de alunos? 1 para inserir e 2 não inserir")
+
+            if (pergunta2 == 1) {
+                let novoNomee = prompt("Digite o nome que deseja acrencentar")
+                alunos.push(novoNomee)
+            } else if (pergunta2 == 2) {
+                alert("Está é a lista.");
+                for (let indice = 0; indice < alunos.length; indice++) {
+                    document.write(alunos[indice] + "<br>")
+                }
+                break;
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
