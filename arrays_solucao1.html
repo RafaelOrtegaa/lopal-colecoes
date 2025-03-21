@@ -30,18 +30,15 @@
             }
         }
         function removerAlunos() {
-        let alunoRemover = prompt('Digite o nome do(a) aluno(a) para remover:');
-        if (alunoRemover) {
-    
-            let indice = alunos.indexOf(alunoRemover);
-            
-            if (indice !== -1) {
-                alunos.splice(indice, 1);  
-                imprimirAlunos(); 
-            } else {
-                alert('Aluno não encontrado!');
-            }
+        
+        if (alunos.length > 0){
+            alunos.pop();
+
+            imprimirAlunos();
+        }else{
+            alert("Não tem mais alunos na lista")
         }
+    
     }
     imprimirAlunos();
     </script>
