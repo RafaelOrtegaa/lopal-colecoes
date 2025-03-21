@@ -14,7 +14,7 @@
     <output></output>
 
     <script>
-        let alunos = ["Aline", "Arthur", "Bárbara", "Bruna Luise", "Bruna Torres", "Bruna Velôso", "Cauã", "Daniel", "Davi"];
+        let alunos = [];
 
         function imprimirAlunos() {
 
@@ -28,8 +28,12 @@
 
         function adicionarAlunos() {
 
-            let novoAluno = prompt('Digite o nome do(a) aluno(a):');
-            alunos.push(novoAluno);
+            let nome = prompt('Digite o nome do(a) aluno(a):');
+            let idade = prompt('Qual a idade do(a) aluno(a)')
+            let sesi = prompt('Qual a unidade SESI do(a) aluno(a)')
+            let pet = prompt('O(a) aluno(a) possiu pet?')
+
+            alunos.push(nome + " | " + idade + " anos " + ' | ' + " estuda no sesi " + sesi + " | " + "Tem um pet? " + pet);
 
             opcaoUsuario = confirm('Deseja Adicionar mais um aluno?');
 

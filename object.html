@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+
+
+        //  let nome = 'Rafael';
+        //  let idade = 16;
+        //  let sesi = 'Ipiranga';
+        //  let temPet = true
+
+        //  let nome2 = 'Gabriel';
+        //  let idade2 = '15';
+        //  let sesi2 = 'Ipiranga';
+        //  let temPet2 = true 
+
+        // document.write('Nome 1: ' + nome1);
+        // document.write('Idade:' + idade1);
+
+
+        let aluno = {
+            nome: 'Rafael',
+            idade: 16,
+            sesi: 'Ipiranga',
+            temPet: true
+        }
+
+
+        //document.write(aluno);
+        console.log(aluno);
+
+        document.write('Nome ' + aluno.nome + '<br>');
+        document.write('Idade ' + aluno.idade + '<br>');
+        document.write('SESI ' + aluno.sesi + '<br>');
+        document.write('Tem pet? ' + aluno.temPet + '<br>');
+
+        let alunos = [
+            { nome: 'Rafael', idade: 16, sesi: 'Ipiranga', temPet: true },
+            { nome: 'Gabriel', idade: 15, sesi: 'Ipiranga', temPet: true }
+        ];
+
+        for (let i = 0; i < alunos.length; i++) {
+            //document.write("<p>O(a) aluno(a) " + alunos[i].nome + ' tem ' 
+            //+ alunos[i].idade + ' anos e é do SESI ' + alunos[i]. sesi + ".</p>");
+
+            document.write(`<p>O(a) aluno(a) ${alunos[i].nome} tem ${alunos[i].idade} anos e é do SESI ${alunos[i].sesi}
+                    . ${alunos[i].temPet ? "Tem pet" : "Não tem pet."}</p> `);
+
+        }
+
+
+        
+    </script>
+</body>
+
+</html>
